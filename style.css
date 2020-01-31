@@ -102,6 +102,10 @@ p::first-letter {
   border: 2px solid red;
 }
 
+h2:first-of-type {
+  color: #707070;
+}
+
 .sidebar .current {
   background-color: red;
 }
