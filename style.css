@@ -79,9 +79,10 @@ h2:first-of-type {
     text-align: center;
     float: none;
   }
-  html {
-    overflow-x: hidden;
-  }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 
