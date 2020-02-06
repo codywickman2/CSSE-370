@@ -79,9 +79,9 @@ h2:first-of-type {
     text-align: center;
     float: none;
   }
+  html {
+    overflow-x: hidden;
+  }
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+
