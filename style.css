@@ -112,6 +112,12 @@ h2:first-of-type {
   background-color: red;
 }
 
+div.main {
+   margin-left: 200px;
+   padding: 1px 16px;
+   height: 1000px;
+}
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -121,13 +127,22 @@ h2:first-of-type {
   .sidebar a {
     float: left;
   }
+  .ddownlinks a {
+    float: left;
+  }
+
   div.content {
     margin-left: 0;
   }
 }
 
+
 @media screen and (max-width: 400px) {
   .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .ddownlinks a {
     text-align: center;
     float: none;
   }
