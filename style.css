@@ -68,7 +68,7 @@ h2:first-of-type {
   .sidebar a {
     float: left;
   }
-  div.content {
+  div.main {
     margin-left: 0;
   }
 }
