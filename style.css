@@ -19,7 +19,7 @@
   color: #ffffff;
 }
 
-div.main {
+div.content {
   margin-left: 200px;
   font-size: 20px;
   padding: 1px 16px;
@@ -68,7 +68,7 @@ h2:first-of-type {
   .sidebar a {
     float: left;
   }
-  div.main {
+  div.content {
     margin-left: 0;
   }
 }
