@@ -16,7 +16,7 @@ body {
 
 }
 
-.row:after {
+.sidebar:after {
   content: "";
   clear: both;
   display: table;
@@ -58,9 +58,6 @@ body {
   .col-12 {width: 100%;}
 }
 
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
 
 .header {
   background-color: #989898;
@@ -107,7 +104,7 @@ html {
   color: #ffffff;
 }
 
-.aside {
+.rightBox {
   background-color: #33b5e5;
   padding: 15px;
   color: #ffffff;
@@ -147,15 +144,15 @@ p::first-letter {
   color: #0000FF;
 }
 
-.aside ul li {
+.rightBox ul li {
   list-style-type: none;
 }
 
-.aside ul li a {
+.rightBox ul li a {
   color: white;
 }
 
-.aside ul li a:hover {
+.rightBox ul li a:hover {
   color: black;
 }
 
