@@ -10,12 +10,12 @@ and open the template in the editor.
         <title>Water Polo</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    
+
     <body>
         <div class="header">
             <h1>Water Polo</h1>
         </div>
-        
+
         <div class="sidebar">
             <div class="col-3 col-s-3 menu">
                 <ul>
@@ -23,7 +23,7 @@ and open the template in the editor.
                     <li><a href="overview.html">Overview</a></li>
                 </ul>
             </div>
-            
+
             <div class="col-6 col-s-9">
                 <h1>Home</h1>
                 <p>
@@ -32,14 +32,19 @@ and open the template in the editor.
                 </p>
                 <img src="waterpoloball.jpg" width="460" height="345">
                 <br></br>
-               
-                <div onmousemove="mouseMove(event)" id="div1"><p>Scroll over the Box!</p></div>
+                
+                <P>Scroll over the box to see the coordinates of your cursor!</p>
+                
+                <br></br>
+
+                <div onmousemove="mouseMove(event)" onmouseout="mouseOut()" id="div1"></div>
                 <br></br>
                 <button onclick="addImg()">Click Here!</button>
                 <div id="newPic"></div>
+                <div id="newMessage"></div>
                 <script src="script.js"></script>
             </div>
-            
+
             <div class="col-3 col-s-12">
                 <div class="rightBox">
                     <h2>The Sport</h2>
