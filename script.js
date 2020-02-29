@@ -29,10 +29,8 @@ function mouseMove(e) {
     var y = e.clientY;
     var coord = "Coordinates(" + x + "," + y + ")";
     document.getElementById("div1").innerHTML = coord;
-
 }
 
 function mouseOut() {
-    document.getElementById("div1").innerHTML="";
-
+    document.getElementById("div1").innerHTML="Coordinates(?,?)";
 }
