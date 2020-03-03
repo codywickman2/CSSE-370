@@ -33,5 +33,5 @@ function mouseMove(e) {
 }
 
 function mouseOut() {
-    document.getElementById("div1").innerHTML="Coordinates(?,?)";
+    document.getElementById("div1").innerHTML="Coordinates(x,y)";
 };
