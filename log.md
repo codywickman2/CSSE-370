@@ -25,3 +25,6 @@ PHASE #4:
         - deletes itself when clicked
     D. An element that contains text that changes when the mouse moves over it, based on mouse location
 
+PHASE #5:
+  Test Cases
+
