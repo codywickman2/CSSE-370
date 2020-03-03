@@ -70,9 +70,13 @@ body {
 
 
 .header {
-  background-color: #989898;
+  background-color: #959595;
   color: #ffffff;
   padding: 15px;
+}
+
+.header h1 {
+    font-size: 40px;
 }
 
 .menu ul {
@@ -115,7 +119,7 @@ body {
 }
 
 .rightBox {
-  background-color: #33b5e5;
+  background-color: #007faf;
   padding: 15px;
   color: #ffffff;
   text-align: center;
@@ -139,13 +143,9 @@ body {
   border: 2px solid red;
 }
 
-h2:first-of-type {
-  color: #707070;
-  text-decoration: underline;
-}
 
 h2:first-of-type {
-  color: #707070;
+  color: #2e2e2e;
   text-decoration: underline;
 }
 
@@ -193,5 +193,40 @@ p {
 
 .tonyA {
     font-family: Lucida Console;
+}
+
+input[type=text]{
+  width: 30%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email]{
+  width: 30%;
+  padding: 8px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #258829;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
