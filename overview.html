@@ -10,13 +10,13 @@ and open the template in the editor.
         <title>Water Polo</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    
+
     <body>
-        
+
         <div class="header">
             <h1>Water Polo</h1>
         </div>
-        
+
         <div class="sidebar">
             <div class="col-3 col-s-3 menu">
                 <ul>
@@ -24,23 +24,23 @@ and open the template in the editor.
                     <li><a class="current" href="overview.html">Overview</a></li>
                 </ul>
             </div>
-            
+
             <div class="col-6 col-s-9">
                 <h1>Overview</h1>
-                <img src="usawp.jpg">
+                <img src="usawp.jpg" alt="USAWP">
                 <h2>Introduction to Water Polo</h2>
                 <p>
                     Water polo is a competitive team sport played in the water between two teams. The game is consisted of four quarters in which each team attempts to score goals by throwing a ball into the opposing teams goal.
                     The team with the most goals at the end is the winner.
                 </p>
-                
-                <br></br>
-                
+
+                <br>
+
                 <h2><strong>Rules of Water Polo</strong></h2>
                 <p>
                     Water polo is a very demanding sport and thus, there are many rules used to cover play, procedures, equipment and officiating of water polo. Some of the basic rules of water polo include:
                 </p>
-                
+
                 <div class="list">
                     <ul>
                         <li> 6 Field players and 1 goalie start the game. Each team has up to 15 players total.</li>
@@ -52,19 +52,25 @@ and open the template in the editor.
                         <li> After 3 major fouls or ejections, a player cannot return to the game. </li>
                     </ul>
                 </div>
-                
-                <br></br>
-                
+
+                <br>
+
                 <h2><strong>Subscribe</strong></h2>
                 <p>
-                    If you would like to subscribe to monthly newsletters from USAWP on updates in the water polo world, please enter your email below!
+                    If you would like to subscribe to monthly newsletters from USAWP on updates in the water polo world, please enter your information below!
                 </p>
-                <form id="emailForm">
-                    Email: <input type="email" name="emailSubscription"><br>
+                <form id="emailForm" action="/action_page.php">
+                    <label for='fName'>First Name</label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your first name.."><br>
+                    <label for="lName">Last Name</label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your last name.."><br>
+                    <label for="email"> Email Address</label><br>
+                    <input type="email" name="email" id="email" placeholder="name@email.com"><br>
+                    <br>
                     <input type="submit" value="Submit">
                 </form>
             </div>
-            
+
             <div class="col-3 col-s-12">
                 <div class="rightBox">
                     <h2>More Links</h2>
