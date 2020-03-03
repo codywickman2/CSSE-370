@@ -25,7 +25,6 @@ function addImg() {
     };
 }
 
-
 function mouseMove(e) {
     var x = e.clientX;
     var y = e.clientY;
