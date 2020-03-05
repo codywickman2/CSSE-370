@@ -27,4 +27,6 @@ PHASE #4:
 
 PHASE #5:
   Test Cases
+    A. Fix accessibility problems(identified by AND1 tool) for both pages
+    
 
