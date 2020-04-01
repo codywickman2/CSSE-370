@@ -49,5 +49,19 @@ PHASE #5:
   Test Cases
   
     A. Fix accessibility problems(identified by AND1 tool) for both pages
+
+PHASE #6:
+
+  Test Cases
+  
+    A. Add this user workflow to your project:
+    
+        - Information is pulled through an API (this can be triggered by a user action or automatically using an onload event handler)
+        
+        - Present to the user some choice based on that information.
+        
+        - Based on the user choice, request additional information through an API.
+        
+        - Present something based on the additional information.
     
 
