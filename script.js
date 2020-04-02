@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 function addImg() {
     var img = document.createElement("img");
     img.src = "tonyA.jpg";
@@ -24,6 +18,7 @@ function addImg() {
         p.remove();
     };
 }
+
 
 function mouseMove(e) {
     var x = e.clientX;
@@ -54,7 +49,6 @@ function fetchMovies() {
             }
     });
 }
-
 
 function clickMovie(e) {
     fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=37ef3f094e636371fe71693eef9606c9&language=en-US&page=1")
