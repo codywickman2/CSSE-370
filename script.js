@@ -36,24 +36,25 @@ function mouseOut() {
     document.getElementById("div1").innerHTML="Coordinates(x,y)";
 };
 
+var movies =[]; 
 function fetchMovies() {
     fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=37ef3f094e636371fe71693eef9606c9&language=en-US&page=1")
-    .then(response => response.json())
-    .then(results => {
-        var elMovies = document.getElementById("movies")
-        elMovies.innerHTML = "";
-        var movies = results.results;
-        for(var i=0;i<11;i++){
-            var li = document.createElement('li')
-            li.addEventListener('click', ()=>clickMovie(movies[i]))
-            var mnode = document.createTextNode(movies[i].original_title)
-            li.appendChild(mnode)
-            elMovies.appendChild(li)
-        }
+        .then(response => response.json())
+        .then(results => {
+            var elMovies = document.getElementById("movies")
+            elMovies.innerHTML = "";
+            movies = results.results;
+            for(var i=0;i<11;i++){
+                var li = document.createElement('li')
+                li.addEventListener('click', (e)=>clickMovie(e))
+                li.id = i;
+                var mnode = document.createTextNode(movies[i].original_title)
+                li.appendChild(mnode)
+                elMovies.appendChild(li)
+            }
     });
 }
 
-function clickMovie(movie) {
-    alert(movie.overview)
-    
+function clickMovie(e) {
+    alert(movies[e.target.id].overview);
 }
