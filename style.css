@@ -230,3 +230,8 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+#movies {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
