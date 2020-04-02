@@ -36,7 +36,7 @@ function mouseOut() {
     document.getElementById("div1").innerHTML="Coordinates(x,y)";
 };
 
-var movies =[]; 
+
 function fetchMovies() {
     fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=37ef3f094e636371fe71693eef9606c9&language=en-US&page=1")
         .then(response => response.json())
