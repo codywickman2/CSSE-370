@@ -42,7 +42,7 @@ function fetchMovies() {
             for(var i=0;i<11;i++){
                 var li = document.createElement('li')
                 li.addEventListener('click', (e)=>clickMovie(e))
-                li.id = i;
+                li.id = movies[i].id;
                 var mnode = document.createTextNode(movies[i].original_title)
                 li.appendChild(mnode)
                 elMovies.appendChild(li)
@@ -50,11 +50,12 @@ function fetchMovies() {
     });
 }
 
+
 function clickMovie(e) {
-    fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=37ef3f094e636371fe71693eef9606c9&language=en-US&page=1")
+    fetch("https://api.themoviedb.org/3/movie/"+e.target.id+"?api_key=37ef3f094e636371fe71693eef9606c9&amp;language=en-US")
     .then(response => response.json())
             .then(results => {
-            movieDescription = results.results;
-            alert(movieDescription[e.target.id].overview)
+	    console.log(results)
+            alert(results.overview)
     });    
 }
