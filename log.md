@@ -62,6 +62,13 @@ PHASE #6:
         
         - Based on the user choice, request additional information through an API.
         
-        - Present something based on the additional information.
+        - Present something based on the additional information
+
+PHASE #7:
+  
+  Test Cases
+  
+    A. Run your website through the OWASP Zap tool and submit a screenshot showing that you have addressed any risks that you are able
+       to control (not server-side vulnerabilities).
     
 
