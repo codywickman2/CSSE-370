@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -58,24 +55,6 @@ session_start();
                 <p>
                     If you would like to subscribe to monthly newsletters from USAWP on updates in the water polo world, please enter your information below!
                 </p>
-               
-                <?php
-                if($_POST){
-                    $name = isset($_POST['name']) ? $_POST['name'] : '';
-                    $password = isset($_POST['password']) ? $_POST['password'] : '';
-                    $csrf = isset($_POST['csrf']) ? $_POST['csrf'] : '';
-                    if(!empty($name) && !empty($password) && !empty($csrf)){
-                        if($_SESSION['csrf'] === $csrf){
-                            echo "Welcome!";
-                        unset($_SESSION['csrf']);
-                    }else{
-                        echo "CSRF ATTACK!!";
-                    }
-                    }
-                     }
-                    $token = md5(uniqid(rand(), true));
-                    $_SESSION['csrf'] = $token;
-                    ?>
                 <form id="emailForm">
                     <label for='fName'>First Name</label><br>
                     <input type="text" id="firstName" name="firstName" placeholder="Your first name.."><br>
@@ -83,7 +62,6 @@ session_start();
                     <input type="text" id="lastName" name="lastName" placeholder="Your last name.."><br>
                     <label for="email"> Email Address</label><br>
                     <input type="email" name="email" id="email" placeholder="name@email.com"><br>
-                    <input type="hidden" name="csrf" value="<?php echo $token; ?>" />
                     <br>
                     <input type="submit" value="Submit">
                 </form>
