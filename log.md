@@ -70,5 +70,16 @@ PHASE #7:
   
     A. Run your website through the OWASP Zap tool and submit a screenshot showing that you have addressed any risks that you are able
        to control (not server-side vulnerabilities).
+     
+PHASE #8:
+
+  Test Cases
+  
+    Add a React component to your webpage that "reacts" to user input by displaying changes.
+    To do this, you will need to
+      - Install and run webpack locally,
+      - Build (compile into) a JavaScript file which will include a React component,
+      - Add the file to your project,
+      - Connect it logically to your project.
     
 
