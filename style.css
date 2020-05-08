@@ -300,3 +300,14 @@ ul li {
   background-color: #45a049;
 }
 
+.scoreNum {
+  color:white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.correctAnswerP {
+  font-family: monospace;
+  font-size: 16px;
+}
+
