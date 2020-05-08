@@ -311,3 +311,20 @@ ul li {
   font-size: 16px;
 }
 
+.movieButton {
+  font-family: monospace;
+  font-size: 15px;
+  width: 25%;
+  background-color: #107bc2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.movieButton:hover {
+  background-color: #555da5;
+}
+
